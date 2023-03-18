@@ -14,11 +14,11 @@ metadata:
 spec:
   tls:
     - hosts:
-        - henry-chung.com
-        - www.henry-chung.com
-      secretName: henry-chung-com
+        - examples-demo.com
+        - www.examples-demo.com
+      secretName: examples-demo-com
   rules:
-    - host: henry-chung.com
+    - host: examples-demo.com
       http:
         paths:
           - path: /?(.*)
@@ -41,7 +41,7 @@ spec:
                 name: server-cluster-ip-service
                 port:
                   number: 5000
-    - host: www.henry-chung.com
+    - host: www.examples-demo.com
       http:
         paths:
           - path: /?(.*)
